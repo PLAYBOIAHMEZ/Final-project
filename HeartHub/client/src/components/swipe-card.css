@@ -1,0 +1,194 @@
+.dashboard-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #fe3072 0%, #ff6496 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-nav {
+  width: 100%;
+  background: white;
+  padding: 15px auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #f0f2f4;
+}
+
+.nav-button.active {
+  background-color: #ffe4e9;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.swipe-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border-radius: 30px;
+  border: 3px solid #ff4458;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.swipe-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #ccc;
+}
+
+.swipe-card-info {
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.swipe-card-info h2 {
+  font-size: 20px;
+  align-items: center;
+  margin: 5px 0;
+  color: #333;
+}
+
+.swipe-card-info p {
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+  color: #666;
+}
+
+.swipe-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.swipe-button {
+  width: 60px;
+  height: 60px;
+  font-size: 26px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.pass-button {
+  background: #ddd;
+  color: #333;
+}
+
+.pass-button:hover {
+  background: #bbb;
+}
+
+.like-button {
+  background: rgb(254, 48, 114);
+  color: white;
+}
+
+.like-button:hover {
+  background: rgb(220, 40, 100);
+}
+
+.swipe-button:active {
+  transform: scale(1.1);
+}
+
+.header__logo {
+  height: 40px;
+  object-fit: contain;
+  width: 90px;
+  position: relative;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* To vertically center the logo */
+}
+
+/*--Matches Page--*/
+.matches-container {
+  background: pink;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*--Notifications Page--*/
+.notifications-container {
+  background: pink;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  height: auto;
+  object-fit: contain;
+  width: 110px;
+  margin: 10px;
+  padding: auto;
+  position: relative;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* To vertically center the logo */
+}
+
+.dash-container {
+  background: linear-gradient(45deg, #ff4458, #eb7985, pink);
+  height: 100vh;
+  width: 100vw;
+}
